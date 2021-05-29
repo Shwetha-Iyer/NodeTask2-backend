@@ -67,7 +67,7 @@ app.post("/forgot",async(req,res)=>{
                 from: 'shwetha.iyer@hotmail.com', // sender address
                 to: req.body.email, // list of receivers
                 subject: "Password Reset link", // Subject line
-                text: `Hello, Please click on the link to reset your password ${URL+/resetpwd/+p_token}`, // plain text body 
+                text: `Hello, Please click on the link to reset your password ${URL+resetpwd/+p_token}`, // plain text body 
               });
               console.log("Message sent: %s", info.messageId);
               console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
