@@ -15,7 +15,7 @@ app.use(cors());
 const URL = "https://sleepy-banach-945fb0.netlify.app/";
 
 app.get("/",(req,res)=>{
-    res.send(200).send("Hey There! This page works");
+    res.status(200).send("Hey There! This page works");
 });
 app.post("/login",async(req,res)=>{
     try{
